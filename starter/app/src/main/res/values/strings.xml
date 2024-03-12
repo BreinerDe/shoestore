@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="shoe_list">Shoe List:</string>
+    <string name="empty_list">No shoes to display</string>
+    <string name="shoe_name">Shoe name:</string>
+    <string name="shoe_company">Company:</string>
+    <string name="shoe_size">Shoe size: </string>
+    <string name="shoe_description">Description: </string>
+    <string name="cancel">cancel</string>
+    <string name="save">save</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="createAccount">create account</string>
+    <string name="welcome">Welcome to the Shoe Store!</string>
+    <string name="findShoes">Find your perfect pair of shoes here.\n</string>
+    <string name="instructions">Instructions</string>
+    <string name="instructionsParagraph">To navigate from the welcome screen to the login screen, simply tap the \'Instructions\' button. To navigate from the login screen to the shoe list screen, enter your username and password and tap the \'Login\' button. Once you are logged in, you will be taken to the shoe list screen where you can browse and purchase shoes.</string>
+    <string name="goToShoeList">Go to Shoe List</string>
+</resources>
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/shoe_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@{shoe.name}"
+            tools:text="Shoe name" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_name">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shoe_size"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{@string/shoe_size(shoe.size)}"
+                    tools:text="Size: 42" />
+
+                <TextView
+                    android:id="@+id/shoe_company"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{@string/shoe_company(shoe.company)}"
+                    tools:text="Company: Dennis" />
+
+                <TextView
+                    android:id="@+id/shoe_description"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{@string/shoe_description(shoe.description)}"
+                    tools:text="Description: text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/divider"
+            android:layout_height="1dp"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
